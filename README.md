@@ -32,10 +32,24 @@
 
 ### 采取的算法主要有：
 
-### [改进粒子群]()
+### [改进粒子群](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/pso.py)、[遗传-退火](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/GASA.py)、[快速贪心](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/IMGR.py)、[改进蚁群](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/%E8%9A%81%E7%BE%A41.py)、[粒子群-禁忌](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/pso.py)、[Google-ortools](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/ort.py)
+
+###  这阶段的各个算法的问题主要有：
+
+* 改进粒子群在时间复杂度和效果和上次比都有很大提升，但当数量级达到10<sup>3</sup>的时候，时间还是很不理想
+* 遗传-退火
+* 快速贪心主要采用了[KD-Tree](https://zh.wikipedia.org/wiki/K-d%E6%A0%91)+最小堆的，主要算法思想就是利用KD-Tree来聚类，再利用最小堆，以边为操作对象，拼出若干条路径，**这个算法的思路是我觉得现阶段最合理的，先聚类再分别解决每条路径**，首先时间复杂度很低，用于解决较大数量级问题是个不错的选择，其次，这个算法的思想也很合理，比较符合现代物流分层的设计方式，可惜实现的时候技术欠佳，未能达到该算法的本来效果
+* 改进蚁群主要是加入了负反馈机制，效果比原先的蚁群算法是要好上不少，但这类元启发算法仍存在参数多时间复杂度高这一问题
+* 粒子群-禁忌就是在改进粒子群的基础上加一个局部搜索得到
+* ortools 是利用Google的开源框架[ortools](https://developers.google.cn/optimization/)实现的，ortools是一套约束问题、线性规划、图形算法工具包，这套算法其实已经足够优秀，**这套工具包已经足够优秀，在规模处于10<sup>3</sup>以内的问题基本都能输出最优解，而且时间足够优秀**，但由于算法都是利用的内置的足够优秀的模型求解该问题，而且由于底层互相引用过于复杂，导致我花了很长时间都未能成功了解该模型的求解流程，且我们的项目目标是构建超启发式算法，无奈只能放弃这个完美答案，**但如果要真正求解该类问题，这个工具包一定是我首选的方法**
+# 项目第三阶段
+
+## 着手搭建超启发式算法
 
 
 
 
 
-  
+
+
+
