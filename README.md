@@ -24,7 +24,7 @@
 
 * 禁忌在前期的表现最优，其原因在于该算法的设计原理是找初始解的局部最优解，搜索域相较于整个解空间要小很多，其次选用贪心的结果作为初始解，部分问题的最优解特征与贪心的结果路径特征较为一致，导致在项目前期贪心+禁忌的组合效果一直最好
 
-### 第一阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/10.08%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83_2.xlsx)
+### 第一阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83)
 
 # 项目第二阶段
 
