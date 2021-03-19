@@ -26,6 +26,8 @@
 
 ### 第一阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83)
 
+
+
 # 项目第二阶段
 
 ## 项目第二阶段采取针对不同的算法进行优化，并加入一些其他种类的算法作为尝试
@@ -46,15 +48,36 @@
 
 * 粒子群-禁忌就是在改进粒子群的基础上加一个局部搜索得到
 
-* ortools 是利用Google的开源框架[ortools](https://developers.google.cn/optimization/)实现的，ortools是一套约束问题、线性规划、图形算法工具包，这套算法其实已经足够优秀，**这套工具包已经足够优秀，在规模处于10<sup>3</sup>以内的问题基本都能输出最优解，而且时间足够优秀**，但由于算法都是利用的内置的足够优秀的模型求解该问题，而且由于底层互相引用过于复杂，导致我花了很长时间都
-  未能成功了解该模型的求解流程，且我们的项目目标是构建超启发式算法，无奈只能放弃这个完美答案，**但如果要真正求解该类问题，这个工具包一定是我首选的方法**
+* ortools 是利用Google的开源框架[ortools](https://developers.google.cn/optimization/)实现的，ortools是一套约束问题、线性规划、图形算法工具包，这套算法其实已经足够优秀，**这套工具包已经足够优秀，在规模处于10<sup>3</sup>以内的问题基本都能输出最优解，而且时间足够优秀**，但由于算法都是利用的内置的足够优秀的模型求解该问题，而且由于底层互相引用过于复杂，导致我花了很长时间都未能成功了解该模型的求解流程，且我们的项目目标是构建超启发式算法，无奈只能放弃这个完美答案，**但如果要真正求解该类问题，这个工具包一定是我首选的方法**
 
 ###  第二阶段的项目效果可参考[表格](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E6%95%B0%E6%8D%AE%E6%AF%94%E8%BE%83)
+
+
 
 # 项目第三阶段
 
 
-## 着手搭建超启发式算法
+## 着手搭建超启发式算法框架
+
+### 主要利用的算法是：
+
+### [DQN神经网络](https://github.com/Ellsom1945/Routing-problem--CVRP/blob/main/H_Hy_Men/Hy_H.py)
+
+### 该阶段主要问题有：
+
+- 由于从未涉足过深度学习，神经网络等领域，要想从头搭建网络框架难度过大，于是又只能求助于各种深度学习开源框架，现阶段主流框架有[TensorFlow](https://github.com/tensorflow/tensorflow)，[keras](https://github.com/keras-team/keras)，[caffe](https://github.com/BVLC/caffe)，[Microsoft Cognitive Toolkit](https://github.com/Microsoft/CNTK)，[PyTorch](https://github.com/pytorch/pytorch)，[...](https://www.kdnuggets.com/2018/04/top-16-open-source-deep-learning-libraries.html)，鉴于各大框架的上手难度以及开源项目数量，最终选择TensorFlow来搭建DQN神经网络，**没错这个TenserFlow又是谷歌的团队开发的**
+
+- 接口也是一个问题，由于DQN网络的输入是固定的action+state格式，需要将CVRP模型的部分特征提取为state,这里主要参考[论文](https://r.cnki.net/kcms/detail/detail.aspx?filename=JSJJ202004025&dbcode=CRJT_CJFD&dbname=CRJT_CJFDTOTAL&v=)
+
+# 项目第四阶段
+
+
+## 设计适合该超启发式算法框架的底层算子
+
+### 主要算子参考[论文]()
+
+### 该阶段作为项目的收尾阶段，我总结一下整个项目和CVRP问题研究心得：
+
 
 
 
