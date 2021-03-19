@@ -67,14 +67,14 @@
 
 - 由于从未涉足过深度学习，神经网络等领域，要想从头搭建网络框架难度过大，于是又只能求助于各种深度学习开源框架，现阶段主流框架有[TensorFlow](https://github.com/tensorflow/tensorflow)，[keras](https://github.com/keras-team/keras)，[caffe](https://github.com/BVLC/caffe)，[Microsoft Cognitive Toolkit](https://github.com/Microsoft/CNTK)，[PyTorch](https://github.com/pytorch/pytorch)，[...](https://www.kdnuggets.com/2018/04/top-16-open-source-deep-learning-libraries.html)，鉴于各大框架的上手难度以及开源项目数量，最终选择TensorFlow来搭建DQN神经网络，**没错这个TenserFlow又是谷歌的团队开发的**
 
-- 接口也是一个问题，由于DQN网络的输入是固定的action+state格式，需要将CVRP模型的部分特征提取为state,这里主要参考[论文](https://r.cnki.net/kcms/detail/detail.aspx?filename=JSJJ202004025&dbcode=CRJT_CJFD&dbname=CRJT_CJFDTOTAL&v=)
+- 接口也是一个问题，由于DQN网络的输入是固定的action+state格式，需要将CVRP模型的部分特征提取为state,这里主要参考[论文](https://wenku.baidu.com/view/37c332420b12a21614791711cc7931b764ce7b72.html)
 
 # 项目第四阶段
 
 
 ## 设计适合该超启发式算法框架的底层算子
 
-### 主要算子参考[论文]()
+### 主要算子参考[论文](https://github.com/Ellsom1945/Routing-problem--CVRP/tree/main/%E9%A1%B9%E7%9B%AE%E8%AE%BA%E6%96%87)
 
 ### 该阶段作为项目的收尾阶段，我总结一下整个项目和CVRP问题研究心得：
 
